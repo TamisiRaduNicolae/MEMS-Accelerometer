@@ -1,0 +1,30 @@
+* A:\my_projects_Tamisi_Radu\sccs_accel\BIAS.asc
+Mn1 N009 N007 0 0 nch l=0.18u w=1u m=multN
+Mp1 N002 N001 VDD VDD pch l=0.18u w=3.3u m=multP
+Mn2 N005 N006 N009 0 nch l=0.18u w=1u m=multN
+Mp2 N005 N003 N002 VDD pch l=0.18u w=3.3u m=multP
+Mn3 N008 N007 0 0 nch l=0.18u w=1u m=multN
+Mp3 N004 N001 VDD VDD pch l=0.18u w=3.3u m=multP
+Mn4 N007 N006 N008 0 nch l=0.18u w=1u m=multN
+Mp4 N001 N003 N004 VDD pch l=0.18u w=3.3u m=multP
+Mn5 N006 N006 0 0 nch l=0.18u w=1u
+Mp5 N003 N003 VDD VDD pch l=0.18u w=3.3u
+I1 VDD N006 {Ib_cascn}
+I2 N001 N007 {Ib_src}
+I3 N003 0 {Ib_cascp}
+VDD VDD 0 1.8
+Vtest N005 0 V
+.model NMOS NMOS
+.model PMOS PMOS
+.lib C:\Users\tamis\OneDrive\Documente\LTspiceXVII\lib\cmp\standard.mos
+.lib 'log018_no1f.l' TT
+.param Ib_cascp = Ib_src * ratio_p
+.param Ib_cascn=Ib_src * ratio_n
+.param Ib_src = 200u
+.param ratio_p=0.27
+.param ratio_n=0.33
+.dc Vtest 0 1.8 0.01
+.param multN=18
+.param multP=32
+.backanno
+.end

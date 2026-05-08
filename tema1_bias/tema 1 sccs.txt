@@ -1,0 +1,12 @@
+tema 1 sccs
+
+multN = 18
+multP = 32
+
+ratioN = 0.33
+ratioP = 0.27
+
+
+plaja de swing :
+
+aprox 1.5V - 0.3V == 1.2V ( din alimentare de 1.8V )
