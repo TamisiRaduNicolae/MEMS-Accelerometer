@@ -1,0 +1,13 @@
+tema2-err
+
+beta = 0.1 
+T = 4095
+Aol = 40950
+Acl_ideal = 10
+
+t_settle = 50 ns
+T_clk = 6.011 ns
+gm = 16.636 mA/V
+Rout_calc -> 2.461 Meg ( aprox, datorita faptului ca rout e vazut in paralel cu reactia la iesire ) = val pt R2 + R1 (de pe reactie)
+
+am luat rout al OTA-ului 1G pt a fi rezistenta paralela de iesire putin mai mare, si astfel sa am Vout mai mare => eroare mai mica, si cu aceste valori am aprox 0.5lsb eroare cumulata la iesire  
