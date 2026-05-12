@@ -1,0 +1,11 @@
+* A:\my_projects_Tamisi_Radu\MEMS_Accelerometer_SCCS\SW_tb\mosSW.asc
+M1 N002 N001 N003 0 NMOS l=180n w=1u m=10
+V1 N001 0 1.8
+V2 N002 N003 10m
+Vin N003 0 0
+.model NMOS NMOS
+.model PMOS PMOS
+.lib C:\Users\tamis\OneDrive\Documente\LTspiceXVII\lib\cmp\standard.mos
+.dc Vin 0 2 0.01
+.backanno
+.end
