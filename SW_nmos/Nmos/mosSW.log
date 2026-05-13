@@ -1,10 +1,19 @@
-Circuit: * A:\my_projects_Tamisi_Radu\MEMS_Accelerometer_SCCS\SW_tb\mosSW.asc
+Circuit: * A:\my_projects_Tamisi_Radu\MEMS_Accelerometer_SCCS\SW_nmos\Nmos\mosSW.asc
 
-Instance "m1": Length shorter than recommended for a level 1 MOSFET.
-Instance "m1": Width narrower than recommended for a level 1 MOSFET.
+Ignoring BSIM parameter XL
+Ignoring BSIM parameter XW
+Ignoring BSIM parameter ACM
+Ignoring BSIM parameter LDIF
+Ignoring BSIM parameter HDIF
+Ignoring BSIM parameter TLEV
+Ignoring BSIM parameter TLEVC
+Ignoring BSIM parameter CALCACM
+Ignoring BSIM parameter SFVTFLAGl
+Warning: Pd = 0 is less than W.
+Warning: Ps = 0 is less than W.
 
-Date: Tue May 12 14:54:16 2026
-Total elapsed time: 0.040 seconds.
+Date: Thu May 14 00:16:11 2026
+Total elapsed time: 0.090 seconds.
 
 tnom = 27
 temp = 27
