@@ -1,0 +1,88 @@
+		SPECIFICATII GENERALE PROIECT
+
+----------FORMULE GENERALE DE PROIECTARE------------
+
+_______Amplificare si excitatie:
+
+
+Vout_ideal = -Vr * (2 * deltaC / CFB)
+
+Vr (formula) = (Vfs * CFB) / (2 * deltaC_max)
+
+Beta (feedback factor) = CFB / (CFB + C1)
+
+Gain Open Loop (Aol) = gm * Rout
+
+
+
+________Dinamica si viteza:
+
+
+Tau (constanta timp) = Cs / (Beta * gm)
+
+BW (Closed Loop) = 1 / (2 * pi * Tau)
+
+UGB (Unit Gain BW) = gm / (2 * pi * Cs)
+
+Timp stabilizare (10-bit) = 7.6 * Tau (pt eroare sub 0.5 LSB)
+
+
+
+________Zgomot si precizie:
+
+
+Noise RMS = sqrt( (k * T) / (Beta * Cs) )
+
+Eroare Gain = 1 / (Aol * Beta)
+
+
+
+---------SPECIFICATII DE DESIGN ACTUALE-----------
+
+
+
+
+
+Vr = 200 mV (ajustat pt CFB = deltaCmax = 200fF)
+
+CFB = 200 fF (egal cu deltaCmax)
+
+C1 = 4 pF (capacitate senzor = 2 * C0)
+
+Cs (Cload) = 3 pF (sarcina ADC)
+
+gm = 5 mA/V (transconductanta OTA)
+
+Rout = 100 MOhm (rezistenta iesire OTA)
+
+Fclk = 4 MHz (Tclk = 250 ns)
+
+
+
+
+------------PERFORMANTE SI STATUS ERORI-----------
+
+
+_________Model Ideal (Switch-uri ideale):
+
+
+Noise RMS: 165 uV
+
+Eroare totala (Gain + Settle): 300 uV (< 0.5 LSB)
+
+Banda de frecventa: 11 MHz
+
+
+
+_________Model Real (Tranzistoare):
+
+
+Eroare raportata: 5.7 LSB (Vout aprox. 1.2954 V)
+
+Cauza: Rezistenta Ron ridicata la switch-urile bootstrapped (S4-S6) la W = 4um
+
+Dimensiuni S0-S3: 220nm / 180nm
+
+Dimensiuni S4-S6: 4um / 180nm
+
+Plan: Redimensionare W pentru S4-S6 la 10um pentru a scadea eroarea de settling.
