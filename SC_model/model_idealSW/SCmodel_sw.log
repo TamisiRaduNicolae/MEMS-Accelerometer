@@ -3,20 +3,20 @@ Circuit: * A:\my_projects_Tamisi_Radu\MEMS_Accelerometer_SCCS\SC_model\model_ide
 WARNING: Less than two connections to node VDD.  This node is used by VDD.
 Direct Newton iteration for .op point succeeded.
 
-Date: Thu May 14 01:23:08 2026
-Total elapsed time: 0.031 seconds.
+Date: Thu May 14 16:49:45 2026
+Total elapsed time: 0.108 seconds.
 
 tnom = 27
 temp = 27
 method = modified trap
-totiter = 2713
-traniter = 2710
-tranpoints = 1344
-accept = 1277
-rejected = 67
-matrix size = 15
+totiter = 2136
+traniter = 2132
+tranpoints = 1066
+accept = 1066
+rejected = 0
+matrix size = 20
 fillins = 0
 solver = Normal
-Matrix Compiler1:      26 opcodes  0.1/[0.1]/0.1
-Matrix Compiler2: off  [0.1]/0.1/0.1
+Matrix Compiler1: 598 bytes object code size  0.2/0.1/[0.1]
+Matrix Compiler2: 1.25 KB object code size  0.1/0.2/[0.1]
 

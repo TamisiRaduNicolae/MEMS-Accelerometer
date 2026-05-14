@@ -1,21 +1,61 @@
 Circuit: * A:\my_projects_Tamisi_Radu\MEMS_Accelerometer_SCCS\macro_model\ota_model.asc
 
 Direct Newton iteration for .op point succeeded.
+.step deltav=0.001
+.step deltav=0.002
+.step deltav=0.003
+.step deltav=0.004
+.step deltav=0.005
+.step deltav=0.006
+.step deltav=0.007
+.step deltav=0.008
+.step deltav=0.009
+.step deltav=0.01
+.step deltav=0.011
+.step deltav=0.012
+.step deltav=0.013
+.step deltav=0.014
+.step deltav=0.015
+.step deltav=0.016
+.step deltav=0.017
+.step deltav=0.018
+.step deltav=0.019
+.step deltav=0.02
+.step deltav=0.021
+.step deltav=0.022
+.step deltav=0.023
+.step deltav=0.024
+.step deltav=0.025
+.step deltav=0.026
+.step deltav=0.027
+.step deltav=0.028
+.step deltav=0.029
+.step deltav=0.03
+.step deltav=0.031
+.step deltav=0.032
+.step deltav=0.033
+.step deltav=0.034
+.step deltav=0.035
+.step deltav=0.036
+.step deltav=0.037
+.step deltav=0.038
+.step deltav=0.039
+.step deltav=0.04
 
-Date: Wed May 13 23:21:54 2026
-Total elapsed time: 0.047 seconds.
+Date: Thu May 14 15:43:58 2026
+Total elapsed time: 1.722 seconds.
 
 tnom = 27
 temp = 27
 method = modified trap
-totiter = 2407
-traniter = 2404
-tranpoints = 1203
-accept = 1154
-rejected = 49
+totiter = 2399
+traniter = 2396
+tranpoints = 1199
+accept = 1151
+rejected = 48
 matrix size = 7
 fillins = 0
 solver = Normal
-Matrix Compiler1:      13 opcodes  0.0/[0.0]/0.0
-Matrix Compiler2: 473 bytes object code size  0.0/0.0/[0.0]
+Matrix Compiler1:      13 opcodes  0.1/[0.1]/0.1
+Matrix Compiler2: off  [0.1]/0.1/0.1
 

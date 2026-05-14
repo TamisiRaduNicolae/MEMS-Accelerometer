@@ -7,7 +7,7 @@ _______Amplificare si excitatie:
 
 Vout_ideal = -Vr * (2 * deltaC / CFB)
 
-Vr (formula) = (Vfs * CFB) / (2 * deltaC_max)
+Vr (formula) = (Vout_swing * CFB) / (2 * deltaC_max)
 
 Beta (feedback factor) = CFB / (CFB + C1)
 
@@ -18,7 +18,7 @@ Gain Open Loop (Aol) = gm * Rout
 ________Dinamica si viteza:
 
 
-Tau (constanta timp) = Cs / (Beta * gm)
+Tau (constanta timp) = Cs / (Beta * gm)  // ~~~ 12.76 ns 
 
 BW (Closed Loop) = 1 / (2 * pi * Tau)
 
